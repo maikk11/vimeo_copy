@@ -1,0 +1,114 @@
+body {
+    background-color:rgba(8, 11, 14, 1);
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 17vh;
+    display: flex;
+    z-index: 2;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 3vh;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 6vh;
+    margin-left: 6vh;
+}
+
+a>img {
+    border-radius: 15%;
+    top: -15%;
+    position: relative;
+}
+
+.button {
+    border-radius: 10%;
+    background-color: rgba(32, 39, 46, 1);
+    transition: background-color 0.5s;
+    width: fit-content;
+    height: fit-content;
+    padding: 1%;
+}
+
+.button:hover {
+    background-color: aqua;
+}
+
+main{
+    display: flex;
+}
+div{
+    flex: 1;
+    position: relative;
+    top: 20vh;
+    height: 150vh;
+    z-index: 1;
+}
+
+div>div{
+    background-color:rgba(16, 21, 26, 1);
+    margin: 3vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 5%;
+    height: 80%;
+}
+div > img{
+    border-radius: 5%;
+    width: 100%;
+}
+
+div > span{
+    color: white;
+    font-size: 4vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.centrale{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 60%;
+
+}
+
+.testo1{
+    margin-top: 5vh;
+    background-color: rgba(32, 39, 46, 1);
+    border-radius: 5%;
+    padding: 2%;
+    width: fit-content;
+    position: relative;
+    left: 10%;
+}
+.testo2{
+    margin-top: 10vh;
+    position: relative;
+    left: 10%;
+    font-size: 6vh;
+}
+
+div > .button{
+    margin-top: 20vh;
+    padding: 5%;
+    position: relative;
+    left: 10%;
+    background-color: rgba(8, 11, 14, 1);
+}
+
+@media screen and (max-width: 600px) {
+    .navbar{
+        flex-direction: column;
+    }
+    main{
+        flex-direction: column;
+    }
+}
